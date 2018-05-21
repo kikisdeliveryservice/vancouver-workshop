@@ -34,6 +34,8 @@ Minimum Hardware (VM) Requirements
 ### Deploy OpenStack With Ceph
     $ cd /opt/openstack-helm
     $ ./tools/deployment/developer/ceph/030-ingress.sh
+    $ sudo systemctl start helm-serve
+    $ make
     $ ./tools/deployment/developer/ceph/040-ceph.sh
     $ ./tools/deployment/developer/ceph/045-ceph-ns-activate.sh
     $ ./tools/deployment/developer/ceph/050-mariadb.sh
