@@ -31,6 +31,9 @@ Minimum Hardware (VM) Requirements
     $ ./tools/deployment/developer/common/010-deploy-k8s.sh
     $ ./tools/deployment/developer/common/020-setup-client.sh
 
+### Monitor in another terminal
+    $ watch kubectl get po -n openstack --show-all=false
+    
 ### Deploy OpenStack With Ceph
     $ cd /opt/openstack-helm
     $ ./tools/deployment/developer/ceph/030-ingress.sh
